@@ -13,6 +13,7 @@ logstash:
   ports:
     - "5000:5000"
     - "6514:6514"
+    - "2055:2055"
   links:
     - elasticsearch
 
