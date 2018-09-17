@@ -1,5 +1,5 @@
 elasticsearch:
-  image: carlosedp/docker-elasticsearch
+  image: carlosedp/docker-elasticsearch:6.3.0-arm64
   volumes:
     - /var/lib/elasticsearch:/elasticsearch/data
   ports:
@@ -19,7 +19,7 @@ logstash:
     - elasticsearch
 
 kibana:
-  image: carlosedp/docker-kibana:latest
+  image: carlosedp/docker-kibana:6.3.0-arm64
   volumes:
     - ./kibana/config/:/opt/kibana/config/
   ports:
